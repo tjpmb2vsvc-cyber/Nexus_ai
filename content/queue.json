@@ -1,0 +1,29 @@
+
+{
+  "items": [
+    {
+      "id": "sample-001",
+      "topic": "El agujero azul de Belice",
+      "status": "draft",
+      "approved": false,
+      "es": {
+        "language": "es",
+        "title": "El misterioso agujero azul de Belice",
+        "script": "En medio del océano existe un enorme agujero azul que esconde secretos geológicos. Su profundidad y sus formaciones submarinas lo convierten en un lugar fascinante.",
+        "sources": [
+          "https://oceanservice.noaa.gov/facts/bluehole.html"
+        ]
+      },
+      "en": {
+        "language": "en",
+        "title": "The mysterious Great Blue Hole",
+        "script": "In the middle of the ocean lies a giant blue hole hiding geological secrets. Its depth and underwater formations make it a fascinating place.",
+        "sources": [
+          "https://oceanservice.noaa.gov/facts/bluehole.html"
+        ]
+      },
+      "visual_rights_note": "Use original or licensed visuals",
+      "music_rights_note": "Use original or licensed music"
+    }
+  ]
+}
