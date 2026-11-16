@@ -12,7 +12,7 @@ permissions:
 jobs:
   validate:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 15
 
     steps:
       - name: Download project
@@ -29,10 +29,15 @@ jobs:
       - name: Discover research topics
         run: python scripts/research_topics.py
 
-      - name: Save research results
+      - name: Generate bilingual scripts
+        run: python scripts/generate_scripts.py
+
+      - name: Save generated content
         uses: actions/upload-artifact@v4
         with:
-          name: nexus-ai-discoveries
-          path: discoveries.json
+          name: nexus-ai-content
+          path: |
+            discoveries.json
+            generated_scripts.json
           if-no-files-found: warn
           retention-days: 7
